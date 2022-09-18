@@ -12,6 +12,14 @@
     <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Form -->
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+
+    <!--Pay CSS-->
+    <link rel="stylesheet" href="css/pay.css">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 

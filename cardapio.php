@@ -39,6 +39,9 @@
             <a class="nav-link catColor catHover" onclick="categoria('4')">
               Bebidas
             </a>
+            <a class="nav-link catColor catHover" onclick="categoria('5')">
+              Sobremesa
+            </a>
           </div>
 
         </div>
@@ -83,7 +86,7 @@
           </h4>
           <a class="corHover" href="cardapio.php"><button type="button" class="btn btn-danger  p-2">Limpar </button></a>
           <button type="button" class="btn btn-warning p-2" data-bs-dismiss="modal">Adicionar +</button>
-          <button type="button" class="btn btn-success p-2">Comprar</button>
+          <button type="button" onclick="Comprar()" class="btn btn-success p-2">Comprar</button>
         </div>
       </div>
     </div>
@@ -100,6 +103,7 @@
   <script src="js/vendor.bundle.js"></script>
   <!-- Theme JS -->
   <script src="js/theme.bundle.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -112,9 +116,8 @@
     let carrinho = document.querySelector('p#cont');
     let nome = document.getElementById('nome-card');
     let valor = document.getElementsByClassName('card-valor');
-    const pedido = [];
+    let receberPay = document.getElementById('payReceber')
 
-    
 
     function categoria(id) {
       id = id;
@@ -135,7 +138,7 @@
 
                             <!-- Image -->
                             <div class="ratio ratio-1x1">
-                              <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
+                              <img class="object-fit-cover" src="imgProdutos/${dados[i].img}" alt="...">
                             </div>
 
                           </div>
@@ -162,19 +165,18 @@
                               </div>
                             </div>
                           </div>
-                        </div>`)
+                        </div>`);
         }
+
         total = Number(tot.innerHTML);
         listar(total, nomeSaida)
 
       })
-
     }
 
     function listar(total, nomeSaida) {
 
       for (var i = 0; i < btn.length; i++) {
-
         btn[i].addEventListener("click", function() {
 
           let key = this.getAttribute('key');
@@ -182,10 +184,15 @@
           tot.innerHTML = total.toFixed(2);
           //alert(nomeSaida[1].innerHTML) 
           nome.innerHTML += nomeSaida[key].innerHTML + ' R$' + Number(valor[key].innerHTML).toFixed(2) + '<br>';
-
         });
-
+       
       }
-
+      
+    }
+    function Comprar(total, nomeSainda){
+   
     }
   </script>
+</body>
+
+</html>
