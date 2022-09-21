@@ -1,7 +1,7 @@
 
 <html lang="pt-br">
 
-<?php include('header.php')?>
+<?php include('head.php')?>
 
 <body>
 
@@ -233,96 +233,6 @@
                 </div>
             </div>
         </section>
-        <!-- RESERVATION -->
-        <section class="py-7 py-md-9 bg-light" id="reservation">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 col-lg-6 text-center">
-
-                        <!-- Heading -->
-                        <h2 class="mb-2">
-                            Reserve uma mesa online
-                        </h2>
-
-                        <!-- Subheading -->
-                        <p class="mb-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="row justify-content-lg-center">
-                    <div class="col-lg-8">
-
-                        <!-- Form -->
-                        <form id="reservationForm">
-                            <div class="row gx-3">
-                                <div class="col-md-6">
-
-                                    <!-- Contact number (hidden) -->
-                                    <input type="hidden" name="contact_number">
-
-                                    <!-- Full name -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="user_name">Full name</label>
-                                        <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Full name" required>
-                                    </div>
-
-                                    <!-- Phone number -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="user_phone">Phone number</label>
-                                        <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Phone number" required>
-                                    </div>
-
-                                    <!-- Email address -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="user_email">Email address</label>
-                                        <input class="form-control" id="user_email" name="user_email" type="email" placeholder="Email address" required>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6">
-
-                                    <!-- Guests -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="guests">Guests</label>
-                                        <select class="form-select" id="guests" name="guests" required>
-                                            <option value="1">1 person</option>
-                                            <option value="2" selected="">2 persons</option>
-                                            <option value="3">3 persons</option>
-                                            <option value="4">4 persons</option>
-                                            <option value="5">5 persons</option>
-                                        </select>
-                                    </div>
-
-                                    <!-- Date -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="date">Date</label>
-                                        <input class="form-control" id="date" name="date" type="date" value="2021-02-12" required>
-                                    </div>
-
-                                    <!-- Time -->
-                                    <div class="mb-3">
-                                        <label class="visually-hidden" for="time">Time</label>
-                                        <input class="form-control" id="time" name="time" type="time" value="18:00" required>
-                                    </div>
-
-                                </div>
-                                <div class="col text-center">
-
-                                    <!-- Button -->
-                                    <button class="btn btn-outline-primary" type="submit">
-                                        Reserve a table
-                                    </button>
-
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- GALLERY -->
         <section class=" py-7 py-md-9">
             <div class="container">
@@ -331,7 +241,7 @@
 
                         <!-- Heading -->
                         <h2 class="mb-2">
-                            Our gallery
+                            Galeria de fotos
                         </h2>
 
                         <!-- Subheading -->

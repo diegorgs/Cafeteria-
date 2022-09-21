@@ -1,6 +1,6 @@
 <html lang="pt-br">
 
-<?php include('header.php') ?>
+<?php include('head.php') ?>
 
 <body onload="categoria('1')">
   <?php include('nav.php') ?>

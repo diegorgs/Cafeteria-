@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
 session_unset();
-include('conn.php');
+include('../conn.php');
 $usuario = "";
 $mensagem = "";
 if ($_SERVER["REQUEST_METHOD"] = "POST") {
@@ -38,31 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] = "POST") {
 
 <html lang="pt-br">
 
-<?php include('header.php') ?>
+<?php include('headPainel.php') ?>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
-        <div class="container">
-
-            <!-- Navbar brand (mobile) -->
-            <a class="navbar-brand d-lg-none text-dark" href="/index.php">Coffee Aquarius</a>
-
-            <!-- Navbar toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar collapse -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- Navbar brand -->
-                <a class="navbar-brand d-none d-lg-flex mx-lg-auto text-dark" href="#">
-                    Coffee Aquarius
-                </a>
-                <!-- Navbar nav -->
-            </div>
-        </div>
-    </nav>
-
     <!--Login-->
 
     <section id="inserir">
@@ -82,10 +60,14 @@ if ($_SERVER["REQUEST_METHOD"] = "POST") {
                                                 <div class="container mt-5 text-dark">
                                                     <h1 class="mt-5 text-center">Adm Acess</h1>
 
-                                                    <label class="form-label text-dark"><h6>Usuario</h6></label>
+                                                    <label class="form-label text-dark">
+                                                        <h6>Usuario</h6>
+                                                    </label>
                                                     <input type="text" name="usuario" id="usuario" class="form-control border border-dark">
 
-                                                    <label class="form-label text-dark mt-4"><h6>Senha</h6></label>
+                                                    <label class="form-label text-dark mt-4">
+                                                        <h6>Senha</h6>
+                                                    </label>
                                                     <input type="password" name="senha" id="senha" class="border border-dark form-control">
                                                     <?php echo $mensagem ?>
                                                     <button type="submit" name="btnCadastrar" class="rounded btn-primary btn p-3 mt-4">Entrar</button>
@@ -108,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] = "POST") {
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
