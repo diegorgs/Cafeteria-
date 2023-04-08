@@ -1,0 +1,28 @@
+body {
+    background-color: #eee
+}
+
+.corHover,
+a:hover {
+    color: rgb(229, 229, 229) !important;
+    text-decoration: none;
+
+}
+
+.catColor {
+    color: rgb(27, 27, 27) !important;
+    font-size: 0.9rem !important;
+}
+/*.corHoverPay,
+a{
+    color: rgb(229, 229, 229) !important;
+}
+*/
+.catHover:hover {
+    color: rgb(255, 179, 0) !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li {
+list-style-type: none; 
+}
